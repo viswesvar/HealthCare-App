@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+
+
+    <TextView
+        android:id="@+id/ab_custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxWidth="200dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:textColor="@color/toolbarIconColor"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:text="Diabetes Records"
+
+        />
+
+
+
+</RelativeLayout>
+

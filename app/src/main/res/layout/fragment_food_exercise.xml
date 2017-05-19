@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FoodExerciseFragment"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/LLButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/bFood"
+            android:text="Food"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bExercise"
+            android:text="Exercise"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFood"
+        android:layout_below="@+id/LLButtons"
+        android:text="@string/food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvExercise"
+        android:layout_below="@+id/LLButtons"
+        android:text="@string/excercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+
+
+</RelativeLayout>

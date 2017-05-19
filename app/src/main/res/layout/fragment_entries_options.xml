@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.assignment.diabetesrecords.modules.diabetes_entry.EntriesOptionsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/LLTopButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/bGlucoseEntry"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Glucose"
+                />
+
+
+            <Button
+                android:id="@+id/bMedicineEntry"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Medicine"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <View
+                android:id="@+id/bGlucoseEntry1"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="3dp"
+
+                android:background="@color/colorPrimary"
+                />
+
+
+            <View
+                android:id="@+id/bMedicineEntry1"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="3dp"
+                android:background="@color/colorPrimary"
+                android:visibility="invisible"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/LLTopButtons"
+        android:id="@+id/FRAGMENT_PLACEHOLDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,399 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".modules.diabetes_entry.EntriesFragment">
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/LLGlucoseEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/LLTopButtons"
+
+        >
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/dateet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Date"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="datetime"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/timeet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Time"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Time"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="datetime"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading Taken : "
+                />
+
+            <Spinner
+                android:id="@+id/spReadingTimings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/glucose_reading_taken_arrays"
+                ></Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <EditText
+                    android:id="@+id/etReading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Glucose Reading"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="mg/dl"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/note"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Note"
+                    android:imeOptions="actionUnspecified"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LLContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/LLTopButtons"
+        android:visibility="gone"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/dateet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Date"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="datetime"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/timeet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Time"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="Time"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="datetime"
+                    android:maxLines="1"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Taken : "
+                />
+
+            <Spinner
+                android:id="@+id/spReadingTimings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/glucose_reading_taken_arrays"
+                ></Spinner>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:imeOptions="actionUnspecified"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:imeOptions="actionUnspecified"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLInsulineInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/insulineinformation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/etInsulineInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Insuline/Tablet Information"
+                    android:imeOptions="actionUnspecified"
+                    android:paddingBottom="20dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceSmall"
+
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LLGlucoseEntry"
+
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/bSave"
+            android:text="Save"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/bAddAnother"
+            android:text="Add Another"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

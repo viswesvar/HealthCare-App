@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+
+
+        >
+        <TextView
+            android:id="@+id/tvReading"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="5.50 mmol/L"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="wrap_content"
+            android:text="03-10-2016"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="wrap_content"
+            android:text="01:00 AM"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

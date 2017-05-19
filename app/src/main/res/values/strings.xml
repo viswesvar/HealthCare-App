@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Diabetes Records</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="glocuseTitle">Glucose</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="six">SIX</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="title_activity_icon_text_tabs">Diabetes Records</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+
+    <string-array name="glucose_reading_taken_arrays">
+        <item>Before Breakfast</item>
+        <item>After Breakfast</item>
+        <item>Before Lunch</item>
+        <item>After Lunch</item>
+        <item>Before Dinner</item>
+        <item>After Dinner</item>
+    </string-array>
+
+
+    <string-array name="reminder_frequency_arrays">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="type_arrays">
+        <item>Type 1</item>
+        <item>Type 2</item>
+    </string-array>
+    <string name="title_activity_add_doctor">Add Doctor</string>
+    <string name="title_activity_add_appointment">Appointment</string>
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_my_profile">My Profile Activity</string>
+    <string name="permission_message_rationale_all">Application needs access to all few permission to perform its operations.</string>
+
+    <string name="ok">OK</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="food">Diabetes diet should have the ratio of 60:20:20 for carbs, fats and proteins. The doctor explains, Per day calorie intake should be between 1,500-1,800 calories with a proportion of 60:20:20 between carbohydrates, fats and proteins, respectively. He adds that a diabetes diet should have at least two seasonal fruits and three vegetables in a diet plan.
+
+Though dry fruits may seem like a healthy snack, it is not a good option for diabetics, as the fructose can spike your sugar level. Go for fresh fruits rather than dry fruits for diabetes control (but there are some restrictions... we will come to it). But you can still opt for nuts as a healthy snack.
+
+</string>
+
+
+    <string name="excercise">Both aerobic and resistance exercise are important for people living with diabetes.
+
+Aerobic exercises
+Aerobic exercise is continuous exercise such as walking, bicycling or jogging that elevates breathing and heart rate.
+
+Resistance exercises
+Resistance exercise involves brief repetitive exercises with weights, weight machines, resistance bands or one’s own body weight to build muscle strength. If you decide to begin resistance exercise, you should first get some instruction from a qualified exercise specialist, a diabetes educator or exercise resource (such as a video or brochure) and start slowly.
+
+</string>
+
+</resources>
