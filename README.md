@@ -1,5 +1,6 @@
 # HealthCare-App
-This Application Helps the patients who suffer from diabetes to maintain there sugar level. Support from version 4 to till dated. Please fork and work, don't push anything here. 
+This Application helps the patients suffering from diabetes to maintain there sugar level, and take proper medication if required.
+Support from version 4 to till dated. Please fork and work, don't push anything here. 
 
 ## Android Application - Diabetes Patients  
 ### Building it
